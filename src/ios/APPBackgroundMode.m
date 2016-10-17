@@ -36,6 +36,7 @@ NSString *const kAPPBackgroundEventFailure = @"failure";
  */
 - (void) pluginInitialize
 {
+    NSLog(@"***** About to init plugin for Amin *****");
     [self disable:NULL];
     [self configureAudioPlayer];
     [self configureAudioSession];
