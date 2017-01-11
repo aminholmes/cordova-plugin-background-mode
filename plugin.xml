@@ -47,6 +47,14 @@
             </array>
         </config-file>
 	-->
+	<!-- Usage description of Health, mandatory since iOS 10 -->
+    	<config-file target="*-Info.plist" parent="NSHealthShareUsageDescription">
+      		<string>The SynsorMed app will need read access to your health data in order to securely deliver your statistics to your selected physician using our platform.</string>
+    	</config-file>
+    	<config-file target="*-Info.plist" parent="NSHealthUpdateUsageDescription">
+      		<string>The SynsorMed app will need read access to your health data in order to securely deliver your statistics to your selected physician using our platform.</string>
+    	</config-file>
+	    
         <resource-file src="appbeep.wav" />
 
         <header-file src="src/ios/APPBackgroundMode.h" />
